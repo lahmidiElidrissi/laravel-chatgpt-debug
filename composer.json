@@ -1,0 +1,15 @@
+{
+    "name": "lahmidielidrissi/laravelchatgptdebug",
+    "autoload": {
+        "psr-4": {
+            "lahmidielidrissi\\LaravelChatgptDebug\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lahmidiElidrissi",
+            "email": "elidrissilahmidi@gmail.com"
+        }
+    ],
+    "require": {}
+}
