@@ -1,5 +1,5 @@
 {
-    "name": "lahmidielidrissi/laravel-debug-helper",
+    "name": "lahmidielidrissi/laravel-chatgpt-debug-helper",
     "autoload": {
         "psr-4": {
             "lahmidielidrissi\\DebugHelper\\": "src/"
