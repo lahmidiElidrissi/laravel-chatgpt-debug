@@ -2,11 +2,7 @@
     "name": "lahmidielidrissi/laravel-debug-helper",
     "autoload": {
         "psr-4": {
-<<<<<<< HEAD
             "lahmidielidrissi\\DebugHelper\\": "src/"
-=======
-            "lahmidielidrissi\\laravelChatgptDebug\\": "src/"
->>>>>>> 226344f1c52dadee546a3eaa6b84c4992196b49b
         }
     },
     "authors": [
