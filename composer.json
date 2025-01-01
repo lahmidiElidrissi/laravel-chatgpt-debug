@@ -1,8 +1,8 @@
 {
-    "name": "lahmidielidrissi/laravelchatgptdebug",
+    "name": "lahmidielidrissi/laravel-debug-helper",
     "autoload": {
         "psr-4": {
-            "lahmidielidrissi\\LaravelChatgptDebug\\": "src/"
+            "lahmidielidrissi\\DebugHelper\\": "src/"
         }
     },
     "authors": [
@@ -11,5 +11,12 @@
             "email": "elidrissilahmidi@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "lahmidielidrissi\\DebugHelper\\DebugHelperServiceProvider"
+            ]
+        }
+    }
 }
