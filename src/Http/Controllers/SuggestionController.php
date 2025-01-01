@@ -23,7 +23,8 @@ class SuggestionController extends BaseController
     {        
         $errorMessage = $request->input('error');
         $errorMessage = str_replace('"' ,' ', $errorMessage);      
-        $errorMessage = str_replace("'" ," ", $errorMessage);      
+        $errorMessage = str_replace("'" ," ", $errorMessage);  
+        $modal = 'meta-llama/Llama-3.3-70B-Instruct-Turbo';    
 
         $client = new Client();
         $response = $client->post('https://api.aimlapi.com/chat/completions', [
@@ -32,9 +33,10 @@ class SuggestionController extends BaseController
                 'Content-Type'  => 'application/json',
             ],
             'json' => [
-                'model' => 'meta-llama/Llama-3.3-70B-Instruct-Turbo',
+                'model' => $modal,
                 'messages' => [ "role" => "user", "Suggest a fix for this Laravel error: {$errorMessage}"],
             ],
+            'verify' => false,
         ]);
 
         $result = json_decode($response->getBody(), true);
