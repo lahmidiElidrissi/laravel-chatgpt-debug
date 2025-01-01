@@ -2,7 +2,7 @@
     "name": "lahmidielidrissi/laravelchatgptdebug",
     "autoload": {
         "psr-4": {
-            "lahmidielidrissi\\LaravelChatgptDebug\\": "src/"
+            "lahmidielidrissi\\laravelChatgptDebug\\": "src/"
         }
     },
     "authors": [
